@@ -1,0 +1,295 @@
+
+.navbar-left {
+  float: left;
+  margin-left: 15px; }
+
+.logo {
+  opacity: 0.5; }
+  .logo img {
+    max-width: 50px;
+    max-height: 50px; }
+
+.navbar a:hover {
+  opacity: 1; }
+
+.navbar .navbar-nav a:hover {
+  opacity: 1;
+  color: white; }
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #home {
+    display: relative; }
+
+  .landing-image {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    opacity: 1;
+    display: block; }
+    .landing-image.active {
+      opacity: 1; } }
+#fake-container {
+  z-index: -10;
+  position: absolute; }
+
+#about-me {
+  min-height: 100vh;
+  overflow: hidden;
+  margin-bottom: 75px;
+  text-align: center; }
+  @media (max-width: 767.9px) {
+    #about-me .svg-shape {
+      width: 100%;
+      height: 250px; } }
+  #about-me .svg-size {
+    height: 225px; }
+  #about-me text {
+    fill: black;
+    font-size: 20px;
+    font-family: 'montserrsat'; }
+  #about-me #diamond {
+    y: 25%;
+    width: 45%;
+    height: 130px;
+    fill: #4D6CFA;
+    transform: rotate(45deg);
+    transform-origin: bottom; }
+  #about-me #diamond-text {
+    font-size: 30px; }
+  #about-me #square {
+    width: 70%;
+    height: 180px;
+    x: 15%;
+    fill: #E00321; }
+  #about-me #circle {
+    cx: 50%;
+    cy: 50%;
+    r: 40%;
+    fill: #00ADFF; }
+  #about-me #triangle {
+    fill: #FFFF00; }
+  @media (min-width: 768px) {
+    #about-me .shapes {
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-template-rows: repeat(3, auto); }
+      #about-me .shapes #centre-grid {
+        grid-column: 2/span 1;
+        grid-row: 2/span 1; }
+      #about-me .shapes #top-left-grid {
+        grid-column: 1/span 1;
+        grid-row: 1/span 1; }
+      #about-me .shapes #top-right-grid {
+        grid-column: 3/span 1;
+        grid-row: 1/span 1; }
+      #about-me .shapes #bottom-right-grid {
+        grid-column: 3/span 1;
+        grid-row: 3/span 1; }
+      #about-me .shapes #centre-target, #about-me .shapes #top-right-target, #about-me .shapes #bottom-right-target, #about-me .shapes #top-left-target {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        width: 0px;
+        height: 0px; } }
+  #about-me .skills {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-items: center; }
+    #about-me .skills #ruby {
+      grid-column: 1/span 1;
+      grid-row: 1/span 1; }
+    #about-me .skills #rails {
+      grid-column: 3/span 1;
+      grid-row: 1/span 1; }
+    #about-me .skills .skills-header {
+      grid-column: 2/span 1;
+      grid-row: 2/span 1;
+      background: #4D6CFA;
+      border-radius: 40px; }
+    #about-me .skills #html {
+      grid-column: 1/span 1;
+      grid-row: 3/span 1; }
+    #about-me .skills #bootstrap {
+      grid-column: 3/span 1;
+      grid-row: 3/span 1; }
+    #about-me .skills .skills-item img {
+      max-width: 120px;
+      max-height: 120px; }
+      @media (min-width: 767px) and (max-width: 991.98px) {
+        #about-me .skills .skills-item img {
+          max-width: 240px;
+          max-height: 240px; } }
+  @media (min-width: 1200px) {
+    #about-me {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto; } }
+
+#previous-work {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 4fr 1fr; }
+  #previous-work h3 {
+    text-align: center;
+    font-size: 3em; }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      #previous-work h3 {
+        font-size: 4em; } }
+  #previous-work h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; }
+    @media (min-width: 767px) and (max-width: 1199.98px) {
+      #previous-work h4 {
+        font-size: 3em; } }
+
+.carousel {
+  /* draggable */
+  /* ---- flickity-button ---- */
+  /* ---- previous/next buttons ---- */
+  /* right to left */
+  /* ---- page dots ---- */ }
+  .carousel .carousel-cell {
+    padding-top: 5vh;
+    width: 90%;
+    height: 70vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center; }
+    @media (min-width: 1200px) {
+      .carousel .carousel-cell {
+        width: 65%;
+        padding-right: 75px;
+        padding-left: 40px; } }
+    .carousel .carousel-cell img {
+      width: 65%;
+      height: 65%; }
+    .carousel .carousel-cell p {
+      font-family: 'montserrsat';
+      width: 80%;
+      text-align: center;
+      padding-left: 25%; }
+      @media (min-width: 767px) {
+        .carousel .carousel-cell p {
+          font-size: 1.5em; } }
+  .carousel .flickity-enabled {
+    position: relative; }
+  .carousel .flickity-enabled:focus {
+    outline: none; }
+  .carousel .flickity-viewport {
+    overflow: hidden;
+    position: relative;
+    height: 100%; }
+  .carousel .flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .carousel .flickity-enabled.is-draggable {
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .carousel .flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab; }
+  .carousel .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+  .carousel .flickity-button {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.75);
+    border: none;
+    color: #333; }
+  .carousel .flickity-button:hover {
+    background: white;
+    cursor: pointer; }
+  .carousel .flickity-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px #19F; }
+  .carousel .flickity-button:active {
+    opacity: 0.6; }
+  .carousel .flickity-button:disabled {
+    opacity: 0.3;
+    cursor: auto;
+    /* prevent disabled button from capturing pointer up event. #716 */
+    pointer-events: none; }
+  .carousel .flickity-button-icon {
+    fill: #333; }
+  .carousel .flickity-prev-next-button {
+    top: 50%;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    /* vertically center */
+    transform: translateY(-50%); }
+  .carousel .flickity-prev-next-button.previous {
+    left: 10px; }
+  .carousel .flickity-prev-next-button.next {
+    right: 10px; }
+  .carousel .flickity-rtl .flickity-prev-next-button.previous {
+    left: auto;
+    right: 10px; }
+  .carousel .flickity-rtl .flickity-prev-next-button.next {
+    right: auto;
+    left: 10px; }
+  .carousel .flickity-prev-next-button .flickity-button-icon {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%; }
+  .carousel .flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: -15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    line-height: 1; }
+  .carousel .flickity-rtl .flickity-page-dots {
+    direction: rtl; }
+  .carousel .flickity-page-dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    background: #333;
+    border-radius: 50%;
+    opacity: 0.25;
+    cursor: pointer; }
+  .carousel .flickity-page-dots .dot.is-selected {
+    opacity: 1; }
+
+footer #contact .centre-heading {
+  text-align: center; }
+  footer #contact .centre-heading a {
+    padding-right: 5px; }
+footer #contact h2 {
+  font-family: 'yellowtail'; }
+  @media (min-width: 767px) {
+    footer #contact h2 {
+      font-size: 3em; } }
+footer #contact img {
+  width: 50px;
+  height: auto; }
+  @media (min-width: 767px) {
+    footer #contact img {
+      width: 75px; } }
+footer #contact .copyright {
+  font-family: 'montserrsat'; }

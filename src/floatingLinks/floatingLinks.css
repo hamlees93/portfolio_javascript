@@ -1,0 +1,27 @@
+.floating-links {
+    display: none; }
+    @media (min-width: 992px) {
+      .floating-links {
+        display: inline-block; } }
+    .floating-links #float-about {
+      position: absolute;
+      left: 47%;
+      top: 10vh; }
+    .floating-links #float-previous {
+      position: absolute;
+      left: 5%;
+      top: 50vh; }
+    .floating-links #float-contact {
+      position: absolute;
+      right: 5%;
+      top: 50vh; }
+    .floating-links p {
+      font-size: 2em;
+      font-family: 'Courier New', Courier, monospace;
+      border: #000;
+      border-style: solid; }
+    .floating-links a {
+      text-decoration: none;
+      color: #000; }
+    .floating-links a:hover {
+      color: azure; }

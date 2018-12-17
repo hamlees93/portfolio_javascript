@@ -1,0 +1,18 @@
+#home {
+    height: 100vh;
+    width: 100%; }
+    #home .home-screen {
+      width: 100%; }
+    @media (max-width: 991.98px) {
+      #home .middle {
+        min-width: 70%;
+        height: auto; } }
+    @media (max-width: 991.98px) {
+      #home .up, #home .right, #home .left {
+        display: none; } }
+    #home .tagline {
+      text-align: center; }
+      #home .tagline .name-title {
+        font-size: 4em; }
+      #home .tagline .job-title {
+        font-family: "montserrsat"; }
